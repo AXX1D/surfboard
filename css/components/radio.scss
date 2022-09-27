@@ -3,6 +3,7 @@
     cursor: pointer;
     user-select: none;
     margin-right: 10px;
+    position: relative;
 
     &--checkbox {
         .radio__visible {
@@ -10,17 +11,23 @@
 
         &:before {
             background: url('../img/check.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
         }}
     }
 }
 
 .radio__elem {
-    display: none;
+    appearance: none;
+    position: absolute;
 
     &:checked ~ .radio__visible {
         &:before {
             display: block;
         }
+    }
+    &:focus ~ .radio__visible {
+    border: 3px solid #FEDB3F;
     }
 }
 
@@ -36,7 +43,7 @@
         content: "";
         width: 14px;
         height: 14px;
-        background: yellow;
+        background: #FEDB3F;
         position: absolute;
         display: none;
         top: 50%;

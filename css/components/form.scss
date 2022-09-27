@@ -29,6 +29,7 @@
     width: 100%;
     padding: 18px 11px;
     border-radius: 4px;
+    border: 3px solid transparent;
 
     &--textarea {
         height: 156px;
@@ -36,7 +37,7 @@
     }
 
     &:focus {
-        border-color: yellow;
+        border-color: #FEDB3F;
         outline: none;
     }
 }

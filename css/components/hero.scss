@@ -6,12 +6,14 @@
 }
 
 
+
 .hero__container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     padding: 24px 0 45px;
+    z-index: 2;
 }
 
 .hero__title-section {
