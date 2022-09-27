@@ -1,0 +1,30 @@
+$baseFontSize: 18px;
+$containerWidh: 940px;
+
+$yellow: #FEDB3F;
+
+//z-ind
+
+$z-fixed-menu: 100;
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap");
+
+
+@import "layout";
+@import "components/hero";
+@import "components/header";
+@import "components/features";
+@import "components/feature";
+@import "components/btn";
+@import "components/section";
+@import "components/headline";
+@import "components/benefits";
+@import "components/benefit";
+@import "components/reviews";
+@import "components/interactive-avatar";
+@import "components/order-section";
+@import "components/form";
+@import "components/radio";
+@import "components/fixed-menu";
