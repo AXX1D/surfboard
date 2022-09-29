@@ -101,11 +101,11 @@ img {
   font-weight: bold;
   font-size: 18px; }
 
-.phone-nubmer {
+.phone-number {
   font-size: 22px;
-  text-decoration: none;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none; }
 
 .phone-number__icon-elem {
   width: 12px;
