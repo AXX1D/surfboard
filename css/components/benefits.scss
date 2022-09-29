@@ -8,9 +8,9 @@
     position: relative;
 
     &:before {
-        content: url(../../img/Combined\ shape\ 2204.png);
+        content: url("../../img/shape.png");
         position: absolute;
-        top: 50px;
+        top: rem(50px);
         right: 0;
         transform: translateX(50%);
     }
@@ -29,6 +29,6 @@
     }
 
 .benefit__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: bold;
 }
