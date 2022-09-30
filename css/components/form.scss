@@ -5,6 +5,10 @@
         flex-direction: column;
         padding: 0 18%;
     }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .form__col {
@@ -56,6 +60,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: rem(40px);
+
+    @include phones {
+        justify-content: center;
+    }
+
 }
 
 .form__btns {

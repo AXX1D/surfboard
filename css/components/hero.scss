@@ -5,7 +5,10 @@
     color: #FFFFFF;
 
     @include tablets {
-        background: url("../../img/tablet-img.jpg") center bottom no-repeat;
+        background: url("../../img/tablet-img.jpg") center center no-repeat;
+    }
+    @include phones {
+        background: url("../../img/mobile-img.jpg") center center no-repeat;
     }
 }
 
@@ -51,4 +54,8 @@
 .hero__title-desc {
     font-size: rem(21px);
     margin-bottom: rem(56px);
+
+    @include phones {
+        padding: 0 16%;
+    }
 }
