@@ -68,10 +68,10 @@ img {
   color: #FFFFFF; }
   @media screen and (max-width: 768px) {
     .hero {
-      background: url("../../img/tablet-img.jpg") center center no-repeat; } }
+      background: url("../img/tablet-img.jpg") center center no-repeat; } }
   @media screen and (max-width: 480px) {
     .hero {
-      background: url("../../img/mobile-img.jpg") center center no-repeat; } }
+      background: url("../img/mobile-img.jpg") center center no-repeat; } }
 
 .hero__container {
   display: flex;

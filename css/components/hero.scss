@@ -5,10 +5,10 @@
     color: #FFFFFF;
 
     @include tablets {
-        background: url("../../img/tablet-img.jpg") center center no-repeat;
+        background: url("../img/tablet-img.jpg") center center no-repeat;
     }
     @include phones {
-        background: url("../../img/mobile-img.jpg") center center no-repeat;
+        background: url("../img/mobile-img.jpg") center center no-repeat;
     }
 }
 
