@@ -62,7 +62,7 @@ img {
   max-width: 100%; }
 
 .hero {
-  background: url("../img/bg.svg") center top/cover no-repeat;
+  background: url("../img/bg.jpg") center top/cover no-repeat;
   height: 100vh;
   min-height: 36.1111111111rem;
   color: #FFFFFF; }
