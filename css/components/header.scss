@@ -1,8 +1,17 @@
 .header {
     display: flex;
+
+    @include tablets {
+        background-color: #1968B1;
+    }
+
+}
+
+.header__container {
+    display: flex;
+    padding: rem(24px) 0 rem(24px);
     align-items: flex-start;
     justify-content: space-between;
-
 }
 
 

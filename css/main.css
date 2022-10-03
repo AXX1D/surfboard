@@ -62,7 +62,10 @@ img {
   max-width: 100%; }
 
 .hero {
-  background: url("../img/bg.jpg") center top/cover no-repeat;
+  background-image: url("../img/bg.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #1968b1;
   background-blend-mode: overlay;
   height: 100vh;
@@ -71,21 +74,17 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
   @media screen and (max-width: 768px) {
     .hero {
-      background: url("../img/tablet-img.jpg") center center no-repeat;
-      background-color: #1968b1;
-      background-blend-mode: overlay; } }
+      background-image: url("../img/tablet-img.jpg"); } }
   @media screen and (max-width: 480px) {
     .hero {
-      background: url("../img/mobile-img.jpg") center center no-repeat;
-      background-color: #1968b1;
-      background-blend-mode: overlay; } }
+      background-image: url("../img/mobile-img.jpg"); } }
 
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 1.3333333333rem 0 2.5rem;
+  padding: 5.6666666667rem 0 8.3333333333rem;
   z-index: 2; }
 
 .hero__title-section {
@@ -110,16 +109,29 @@ img {
   font-weight: bold;
   margin-bottom: 1.1111111111rem;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .hero__main-title {
+      font-size: 2.2222222222rem;
+      line-height: 2rem; } }
 
 .hero__title-desc {
   font-size: 1.1666666667rem;
   margin-bottom: 3.1111111111rem; }
   @media screen and (max-width: 480px) {
     .hero__title-desc {
-      padding: 0 16%; } }
+      padding: 0 16%;
+      font-size: 1rem;
+      line-height: 1.1111111111rem; } }
 
 .header {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .header {
+      background-color: #1968B1; } }
+
+.header__container {
   display: flex;
+  padding: 1.3333333333rem 0 1.3333333333rem;
   align-items: flex-start;
   justify-content: space-between; }
 
@@ -225,6 +237,10 @@ img {
   margin-bottom: 1.9444444444rem;
   text-align: center;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .section__title {
+      font-size: 2.2222222222rem;
+      line-height: 2rem; } }
 
 .headline__title {
   margin-bottom: 0.2777777778rem; }
@@ -286,8 +302,8 @@ img {
   overflow: hidden; }
 
 .benefit__icon {
-  width: 4.1666666667rem;
-  height: 3.8333333333rem;
+  width: 68%;
+  height: 68%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -530,9 +546,10 @@ img {
   height: 4px;
   border-radius: 10px; }
 
-.map-section {
-  background: url("../../img/map.jpg") center center no-repeat;
-  background-size: 100%;
+.map {
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   min-height: 36.1111111111rem; }
 

@@ -1,6 +1,7 @@
-.map-section{
-    background: url("../../img/map.jpg") center center no-repeat;
-    background-size: 100%;
+.map{
+    background-image: url("../img/map.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     min-height: rem(650px);
 }

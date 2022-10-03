@@ -1,22 +1,21 @@
 .hero {
-    background: url("../img/bg.jpg") center top / cover no-repeat;
+    background-image: url("../img/bg.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: rgba(25, 104, 177, 1);
     background-blend-mode: overlay;
     height: 100vh;
-
     min-height: rem(650px);
     color: #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
     @include tablets {
-        background: url("../img/tablet-img.jpg") center center no-repeat;
-        background-color: rgba(25, 104, 177, 1);
-        background-blend-mode: overlay;
+        background-image: url("../img/tablet-img.jpg");
     }
+
     @include phones {
-        background: url("../img/mobile-img.jpg") center center no-repeat;
-        background-color: rgba(25, 104, 177, 1);
-        background-blend-mode: overlay;
+        background-image: url("../img/mobile-img.jpg");
     }
 }
 
@@ -27,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: rem(24px) 0 rem(45px);
+    padding: rem(102px) 0 rem(150px);
     z-index: 2;
 }
 
@@ -57,6 +56,11 @@
     font-weight: bold;
     margin-bottom: rem(20px);
     text-transform: uppercase;
+
+    @include phones {
+        font-size: rem(40px);
+        line-height: rem(36px);
+    }
 }
 
 .hero__title-desc {
@@ -65,5 +69,7 @@
 
     @include phones {
         padding: 0 16%;
+        font-size: rem(18px);
+        line-height: rem(20px);
     }
 }
