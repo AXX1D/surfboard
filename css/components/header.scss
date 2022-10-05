@@ -9,9 +9,13 @@
 
 .header__container {
     display: flex;
-    padding: rem(24px) 0 rem(24px);
+    padding: rem(24px) rem(25px) rem(24px);
     align-items: flex-start;
     justify-content: space-between;
+
+    @include tablets {
+
+    }
 }
 
 

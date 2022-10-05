@@ -4,6 +4,7 @@
 
 .headline {
     text-align: center;
+
 }
 
 .headline__subtitle {
@@ -11,7 +12,12 @@
     margin-bottom: rem(49px);
     color: #666666;
 
+    @include tablets { 
+        padding: 0 13%;
+    }
+
     @include phones {
-        padding: 0 2%;
+        padding: 1%;
+        line-height: 21.6px; 
     }
 }

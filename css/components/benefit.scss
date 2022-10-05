@@ -28,6 +28,14 @@
 
 .benefit__desc{
     color: #666666;
+
+    @include phones {
+        line-height: 21.6px;
+    }
+
+    @include phones-small {
+        
+    }
 }
 
 .benefit__title {

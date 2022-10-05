@@ -11,6 +11,10 @@
     padding: 0 3%;
     position: relative;
 
+    @include tablets {
+        padding: 0 1%;
+    }
+
     @include phones {
         padding: 0;
     }
@@ -22,9 +26,10 @@
         right: 0;
         transform: translateX(50%);
 
-        @include phones {
+        @include tablets {
             display: none;
         }
+
     }
 
     &:first-child {
